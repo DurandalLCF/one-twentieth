@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'/>
+	<title>1/20</title>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'/>
+	<meta name='apple-mobile-web-app-capable' content='yes' />
+	<meta name='screen-orientation' content='portrait' />
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<link href="css/reset.css" rel="stylesheet" />
+        <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<script src="jweixin-1.2.0.js"></script>
+	<script src="js/jquery.2.1.1.min.js"></script>
+	<script src="js/html2canvas.min.js"></script>
+	<script src="loader.js" ></script>
+	<script src="init.js" ></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+
+	<div class="app">
+		<section class="load">
+			<figure2></figure2>
+			<figure3></figure3>
+			<figure4></figure4>
+			<figure5></figure5>
+		</section>
+		<section class="ss1">
+			<figure>
+				<img src="img/标题.png" style="position:absolute;left:0%;top:3.4%;padding-bottom:10%;width:65.8%;">
+				<img src="img/v-r.png" style="position:absolute;left:69.2%;top:90.6%;padding-bottom:10%;width:25.6%;">
+			</figure>
+		</section>
+		<section class="ss2">
+			<center>
+				<img src="img/文字.png">
+			</center>
+		</section>
+
+		<section class="ss3">
+			<center class="trent-slider">
+			   	<li class="t-slide current-t-slide"><img src="img/bg/1.png" ></li>
+				<li class="t-slide"><img src="img/bg/2.png" alt=""></li>	
+				<li class="t-slide"><img src="img/bg/3.png" alt=""></li>	
+				<li class="t-slide"><img src="img/bg/4.png" alt=""></li>
+				<li class="t-slide"><img src="img/bg/5.png" alt=""></li>
+				<li class="t-slide"><img src="img/bg/6.png" alt=""></li>
+				<li class="t-slide"><img src="img/bg/7.png" alt=""></li>
+				<li class="t-slide"><img src="img/bg/8.png" alt=""></li> 	
+			
+				<div class="t-slider-controls">
+					<div class="arrow right-arrow">
+						<div class="arrow-container">
+							<div class="arrow-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+						</div>
+					</div>
+					<div class="arrow left-arrow">
+						<div class="arrow-container">
+							<div class="arrow-icon"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+						</div>
+					</div>
+<!-- 				<div class="t-load-bar">
+					<div class="inner-load-bar"></div>
+				</div> -->
+		                	<div class="t-dots-container">
+						<div class="t-slide-dots-wrap">
+							<div class="t-slide-dots"></div>
+						</div>
+					</div>
+				</div>	
+			</center>
+		
+			<form id="myform" method="post" enctype="multipart/form-data"> 
+				<input type="file" id="uploadImg" name="uploadImg" onchange="preview(this)" 
+					style="display:none;"/>
+			</form>
+			
+			<button class="bt1" type="button" style="background-image:url(img/buttom/3.png);outline:0;"
+				onclick="javascript:{document.getElementById('uploadImg').click();}"></button>
+			<button class="bt2" type="button" id="bt2" style="background-image:url(img/buttom/按钮3.png);left:52.8%;outline:0;"></button>
+
+		    <script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+	        <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+	        <script src="js/slide.js"></script>
+		</section>
+
+
+		<section class="ss4">
+			<canvas id="canvasss4" style="display:none;">您的浏览器不支持canvas。</canvas>
+			<center>
+				<img id="ss4img" src="img/bg.png" style="" >
+			</center>
+			<center-hid><div>
+				<p>我是 <input type="text" id="ss4input" maxlength="10" placeholder="      " /></p>
+				<a></a>
+			</div></center-hid>
+
+			<button class="bt3" type="button" style="background-image:url(img/buttom/按钮1.png);outline:0;"></button>
+			<button class="bt5" type="button" style="background-image:url(img/buttom/按钮3.png);left:52.8%;outline:0;"></button>
+		</section>
+
+		
+		<section class="ss5">
+			<canvas id="canvasss5" style="display:none;">您的浏览器不支持canvas。</canvas>
+			<img id="ss5show" src="img/bg.png" style="padding-bottom:164%;width:98.6%;top: 50%;margin-top:-82%;left: 0.7%;">
+			<!--<img src="img/长按保存.png" style="position:absolute;width=26.9%;padding-bottom=1.7%;left:37%;top:85.6%;margin-top:-0.8%;z-index:999;">-->
+			<img id="ss5img" src="img/bg.png" style="display:none;width:90%;top:14.5%;height:70%;" >
+			<!--<div style="display: none;">
+				<img src="img/标题.png">
+				<img src="img/bg.png" style="width:90%;top:14.5%;height:70%" >
+				<img src="img/logo1.png" style="left:76%;width:16.2%;top:76.8%;height:5%">
+				<img src="img/长按保存.png" style="left:36.7%;width:27%;top:85.8%;height:1%">
+				<img src="img/xiuxiu.jpeg" style="left:78%;width:13.7%;top:87%;height:8.5%">
+				<font style="position:absolute;left:3.3%;top:85%;">
+				“
+				</font>
+				<div style="position:absolute;left:6%;top:87.4%;">
+				<font >
+				我是
+				</font>
+				<input value="匿名者" onfocus="javascript:{if(this.value=='匿名者')this.value='';}" 
+					onblur="javascript:{if(this.value==''){myalert('请输入您的名字。','');this.value='匿名者';}}"
+					style="color:blue;outline:none;border:0;width: 50%;"/>
+				<font >
+				<br/>我是第
+				</font>
+				<font id="ss5number"></font>
+				<font >
+				个<br/>了解与包容性别多元化的发声者”
+				</font>
+				</div>
+				
+				<img src="img/1.jpeg" style="left:74%;width:4%;top:87%;height:8。5%">
+			</div>-->
+		</section>
+	</div>
+	<div class="debug">debug</div>
+</body>
+</html>
